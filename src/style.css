@@ -1,8 +1,8 @@
 :root {
     --dark-accent: #011303;
-    --body-color: rgb(247, 255, 250);
+    --body-color: rgb(255, 255, 255);
     --card-color: white;
-    --accent: rgb(219, 205, 5);
+    --accent: gold;
     --box-shadow: rgba(128, 128, 128, 0.228);
   }
 
@@ -41,10 +41,24 @@ body {
     padding: 20px 0;
 }
 
+
+.home, .menu, .about {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--accent);
+}
+
+
+
 /* TITLE */
 
 .title-wrap {
     position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bad Script', cursive; ;
+    color: whitesmoke;
+    padding: 30px;
+    display: flex;
 }
 
 .title-wrap:before {
@@ -55,30 +69,23 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
-    background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+    opacity: 0.9;
+    filter: brightness(60%);
+    background-image: linear-gradient(rgba(30, 35, 30, 0.658), rgba(24, 27, 24, 0.2)), url(/src/assets/sparkle-chef.jpeg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
 }
 
-.title-image {
+.title {
     position: relative;
     /* will change image UI later */
-    background-image: url(../images/sparkle-chef.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Bad Script', cursive; ;
-    color: var(--accent);
-    padding: 30px;
-    display: grid;
-
 }
 
 
-
+h1 {
+    font-size: 3rem;
+}
 
 /* Info Container */
 
@@ -90,26 +97,21 @@ body {
 }
 
 .card {
-    border: 1px solid var(--dark-accent);
     padding: 30px;
-    border-radius: 10px;
+    display: grid;
+    grid-template: 1 fr 1 fr / 1fr 1fr;
 }
-
 
 button {
     font-family: inherit;
     font-size: 100%;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    background-color: white;
     font-weight: 500;
     outline: none;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 8px var(--box-shadow);
     transition: 0.3s;
 }
 
