@@ -1,0 +1,1 @@
+console.log('This page will have the menu.');
