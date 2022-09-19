@@ -1,4 +1,8 @@
 # restaurant-page
+This project was intended to practice building with webpack and ES6 Modules
+
+
+Image References
 
 Favicon:
 <a href="https://www.flaticon.com/free-icons/bamboo" title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
@@ -19,3 +23,15 @@ location icon
 
 appointment icon
 <div> Icons made by <a href="https://www.flaticon.com/authors/saepul-nahwan" title="Saepul Nahwan"> Saepul Nahwan </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+
+Spicy Bamboo Shoot Salad
+https://thewoksoflife.com/spicy-bamboo-shoot-salad/
+
+Hot and Sour Soup
+https://www.ohmyfoodrecipes.com/hot-sour-soup/
+
+Simmered Bamboo Shoots
+https://www.thespruceeats.com/simmered-bamboo-shoots-takenoko-no-nimono-2031547
+
+Fried Rice
+https://stock.adobe.com/images/delicious-fried-rice-with-shrimps-lime-and-vegetables-in-a-black-bowl-on-a-bamboo-placemat-traditional-asian-food-on-a-wooden-table/308469792?prev_url=detail&asset_id=308472692

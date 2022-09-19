@@ -1,33 +1,35 @@
 import './style.css';
-import './menu.js';
-import './about.js';
-import loadHome from './home.js';
+import makeHeader from './page-load';
+import loadMenu from './menu.js';
+import loadAbout from './about.js';
+import loadHome from './home';
 
-
-const makeHeader = function() {
-    const content = document.getElementById('content');
-
-    const header = document.createElement('div');
-    header.classList.add('header');
-
-    const home = document.createElement('button');
-    home.classList.add('home');
-    home.textContent = 'home';
-
-    const menu = document.createElement('button');
-    menu.classList.add('menu');
-    menu.textContent = ('menu');
-
-    const about = document.createElement('button');
-    about.classList.add('about');
-    about.textContent = 'about';
-
-    header.appendChild(home);
-    header.appendChild(menu);
-    header.appendChild(about);
-    content.appendChild(header);
-
-};
 
 makeHeader();
-loadHome();
+loadHome(); 
+
+const content = document.getElementById('content');
+const titleWrap = document.querySelector('title-wrap');
+const infoWrap = document.querySelector('info-wrap');
+
+
+const homeButton = document.querySelector('.home');
+homeButton.addEventListener('click', function() {
+    content.removeChild(content.children[2]);
+    content.removeChild(content.children[2]);
+    loadHome();
+});
+
+const menuButton = document.querySelector('.menu');
+menuButton.addEventListener('click', function() {
+    content.removeChild(content.children[2]);
+    content.removeChild(content.children[2])
+    loadMenu();
+});
+
+const aboutButton = document.querySelector('.about');
+aboutButton.addEventListener('click', function() {
+    content.removeChild(content.children[2]);
+    content.removeChild(content.children[2])
+    loadAbout();
+});

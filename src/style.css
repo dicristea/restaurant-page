@@ -25,8 +25,8 @@ body {
 
 #content {
     display: grid;
-    grid-template-rows: 100px 5fr 5fr;
-    min-height: 95vh;
+    grid-template-rows: 100px 5fr auto;
+    min-height: 100vh;
 }
 
 
@@ -45,13 +45,37 @@ body {
 .home, .menu, .about {
     padding-bottom: 5px;
     border-bottom: 1px solid var(--accent);
+    background-color: transparent;
 }
 
 
+button {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+button:active {
+    color: var(--accent);
+    box-shadow: none;
+}
 
 /* TITLE */
 
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
 .title-wrap {
+    flex: 1;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -79,17 +103,24 @@ body {
 
 .title {
     position: relative;
-    /* will change image UI later */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+}
+
+.title>p {
+font-size: 1.1rem;
 }
 
 /* Info Container */
 
-.info-container {
+.info-wrap {
+    flex: 1;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -99,25 +130,7 @@ h1 {
 .card {
     padding: 30px;
     display: grid;
-    grid-template: 1 fr 1 fr / 1fr 1fr;
-}
-
-button {
-    font-family: inherit;
-    font-size: 100%;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 500;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: 0.3s;
-}
-
-button:active {
-    color: var(--accent);
-    box-shadow: none;
+    grid-template: 1fr 1fr / 1fr 1fr;
 }
 
 
