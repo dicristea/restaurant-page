@@ -20,6 +20,9 @@ const makeHeader = function() {
     header.appendChild(menu);
     header.appendChild(about);
     content.appendChild(header);
+
 };
+
+
 
 export default makeHeader;
