@@ -1,19 +1,21 @@
-const makeHeader = function() {
-    const content = document.getElementById('content');
+const content = document.getElementById('content');
 
+
+export const makeHeader = function() {
     const header = document.createElement('div');
-    header.classList.add('header');
-
     const home = document.createElement('button');
-    home.classList.add('home');
-    home.textContent = 'home';
-
     const menu = document.createElement('button');
-    menu.classList.add('menu');
-    menu.textContent = ('menu');
-
     const about = document.createElement('button');
+    
+    
+    header.classList.add('header');
+    home.classList.add('home');
+    menu.classList.add('menu');
     about.classList.add('about');
+    
+    
+    home.textContent = 'home';
+    menu.textContent = ('menu');
     about.textContent = 'about';
 
     header.appendChild(home);
@@ -23,6 +25,14 @@ const makeHeader = function() {
 
 };
 
+export const makeFooter = function() {
+    const footer = document.createElement("footer");
+    footer.textContent = 'ddtea ⚜ 2022';
+    content.appendChild(footer);
+};
 
-
-export default makeHeader;
+export const removeChildNodes = function(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    };
+};

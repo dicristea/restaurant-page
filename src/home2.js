@@ -1,8 +1,8 @@
 import LocIcon from './assets/location.png';
 import HoursIcon from './assets/appointment.png';
-import { addNavEvents } from '.';
+import { addNavEvents } from './index';
 
-function loadHome() {
+function loadHome2() {
     const content = document.getElementById('content');
     const body = document.createElement('div');
     const titleWrap = document.createElement('div');
@@ -27,7 +27,7 @@ function loadHome() {
     body.classList.add('body');
     titleWrap.classList.add('title-wrap');
     title.classList.add('title');
-    subtitle.classList.add('subtitle');
+    // subtitle.classList.add('subtitle');
     infoWrap.classList.add('info-wrap');
     card.classList.add('card');
     map.classList.add('map');
@@ -37,8 +37,8 @@ function loadHome() {
 
 
 
-    name.textContent = "The Panda's Bamboo";
-    subtitle.textContent = 'The tender husks and fragrant buds have just emerged from the forest, and the price... is as heavy as gold. - Li Shangyin'; 
+    name.textContent = "Menu";
+    // subtitle.textContent = 'The tender husks and fragrant buds have just emerged from the forest, and the price... is as heavy as gold. - Li Shangyin'; 
     location.textContent = 'Bamboo Forest, Saratoga'
     hours.textContent = 'Monday and Thursdays,  4 p.m. to 10 p.m.';
 
@@ -64,4 +64,4 @@ function loadHome() {
 };
 
 
-export default loadHome;
+export default loadHome2;

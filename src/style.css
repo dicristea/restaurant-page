@@ -59,7 +59,7 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 button:active {
